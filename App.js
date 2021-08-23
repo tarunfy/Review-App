@@ -5,7 +5,7 @@ import About from "./components/about";
 import Review from "./components/review";
 import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
-import Navigator from "./routes/homeStack";
+import MyDrawer from "./routes/drawer";
 
 const getFonts = () =>
   Font.loadAsync({
@@ -16,7 +16,7 @@ const getFonts = () =>
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
   if (fontsLoaded) {
-    return <Navigator />;
+    return <MyDrawer />;
   } else {
     return (
       <AppLoading

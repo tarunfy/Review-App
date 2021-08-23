@@ -9,7 +9,7 @@ const Drawer = createDrawerNavigator();
 export default function MyDrawer() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="homeStack">
+      <Drawer.Navigator>
         <Drawer.Screen
           name="homeStack"
           component={HomeStack}

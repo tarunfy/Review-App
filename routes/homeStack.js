@@ -6,7 +6,6 @@ import Home from "../components/home";
 import Review from "../components/review";
 
 const Stack = createStackNavigator();
-
 export default () => (
   <NavigationContainer>
     <Stack.Navigator>

@@ -8,8 +8,24 @@ import Review from "../components/review";
 const Stack = createStackNavigator();
 export default () => (
   <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="home" component={Home} options={{ title: "Home" }} />
+    <Stack.Navigator
+      screenOptions={{
+        headerTintColor: "white",
+        headerTitleAlign: "center",
+        headerTitleStyle: { fontSize: 23 },
+        headerStyle: {
+          backgroundColor: "#111",
+          height: 100,
+        },
+      }}
+    >
+      <Stack.Screen
+        name="home"
+        component={Home}
+        options={{
+          title: "Home",
+        }}
+      />
       <Stack.Screen
         name="review"
         component={Review}

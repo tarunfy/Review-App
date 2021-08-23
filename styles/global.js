@@ -5,11 +5,14 @@ export const globalStyles = StyleSheet.create({
     padding: 50,
     flex: 1,
     backgroundColor: "#111",
+    justifyContent: "center",
+    alignItems: "center",
   },
   titleText: {
     fontFamily: "Lato-bold",
     fontSize: 20,
     color: "#fff",
+    marginBottom: 20,
   },
   paragraph: {
     marginVertical: 8,

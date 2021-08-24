@@ -3,7 +3,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import About from "../components/about";
-import Header from "../shared/header";
+
 
 const Stack = createStackNavigator();
 export default function AboutStack() {
